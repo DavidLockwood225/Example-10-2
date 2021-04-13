@@ -1,0 +1,10 @@
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\bin\Debug\UsingSQLServerDatabases Project.exe.config
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\bin\Debug\UsingSQLServerDatabases Project.exe
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\bin\Debug\UsingSQLServerDatabases Project.pdb
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.csprojAssemblyReference.cache
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases_Project.frmInventory.resources
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases_Project.Properties.Resources.resources
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.csproj.GenerateResource.cache
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.csproj.CoreCompileInputs.cache
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.exe
+C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.pdb
