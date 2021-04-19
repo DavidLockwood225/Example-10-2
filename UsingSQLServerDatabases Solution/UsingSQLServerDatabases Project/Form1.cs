@@ -35,7 +35,15 @@ namespace UsingSQLServerDatabases_Project
                                                   + ";Integrated Security=True;"
                                                   + "Connect Timeout=30;"
                                                   + "User Instance=True;");
-            inventoryConnection.Open();
+            try
+            {
+                inventoryConnection.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error connecting to database.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             inventoryCommand = new SqlCommand("SELECT * FROM Inventory ORDER BY Item", inventoryConnection);
             inventoryAdapter = new SqlDataAdapter();
             inventoryAdapter.SelectCommand = inventoryCommand;
