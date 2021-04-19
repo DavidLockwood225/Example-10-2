@@ -8,3 +8,13 @@ C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution
 C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.csproj.CoreCompileInputs.cache
 C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.exe
 C:\Users\dlockwood024548\Documents\Example 10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.pdb
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\bin\Debug\UsingSQLServerDatabases Project.exe.config
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\bin\Debug\UsingSQLServerDatabases Project.exe
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\bin\Debug\UsingSQLServerDatabases Project.pdb
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.csprojAssemblyReference.cache
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases_Project.frmInventory.resources
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases_Project.Properties.Resources.resources
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.csproj.GenerateResource.cache
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.csproj.CoreCompileInputs.cache
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.exe
+C:\Users\Dharla\Documents\Example-10-2\UsingSQLServerDatabases Solution\UsingSQLServerDatabases Project\obj\Debug\UsingSQLServerDatabases Project.pdb

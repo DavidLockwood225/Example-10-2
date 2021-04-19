@@ -58,6 +58,7 @@ namespace UsingSQLServerDatabases_Project
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.dlgPreview = new System.Windows.Forms.PrintPreviewDialog();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picItem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -340,11 +341,23 @@ namespace UsingSQLServerDatabases_Project
             this.dlgPreview.Name = "dlgPreview";
             this.dlgPreview.Visible = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(109, 316);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(66, 23);
+            this.btnExit.TabIndex = 26;
+            this.btnExit.TabStop = false;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(523, 450);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
@@ -413,6 +426,7 @@ namespace UsingSQLServerDatabases_Project
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.PrintPreviewDialog dlgPreview;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

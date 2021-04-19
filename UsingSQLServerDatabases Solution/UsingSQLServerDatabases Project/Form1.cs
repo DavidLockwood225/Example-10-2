@@ -30,10 +30,11 @@ namespace UsingSQLServerDatabases_Project
 
         private void frmInventory_Load(object sender, EventArgs e)
         {
-            inventoryConnection = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;"
+            inventoryConnection = new SqlConnection("Data Source=localhost\\SQLEXPRESS;"
                                                   + "AttachDbFilename=" + Path.GetFullPath("SQLInventoryDB.mdf")
                                                   + ";Integrated Security=True;"
-                                                  + "Connect Timeout=30;");
+                                                  + "Connect Timeout=30;"
+                                                  + "User Instance=True;");
             inventoryConnection.Open();
             inventoryCommand = new SqlCommand("SELECT * FROM Inventory ORDER BY Item", inventoryConnection);
             inventoryAdapter = new SqlDataAdapter();
@@ -55,19 +56,27 @@ namespace UsingSQLServerDatabases_Project
 
         private void frmInventory_FormClosing(object sender, FormClosingEventArgs e)
         {
-            try
+            if (myState.Equals("Edit") || myState.Equals("Add"))
             {
-                SqlCommandBuilder inventoryAdapterCommands = new SqlCommandBuilder(inventoryAdapter);
-                inventoryAdapter.Update(inventoryTable);
+                MessageBox.Show("You must finish the current edit before stopping.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                e.Cancel = true;
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message, "Error Saving Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                try
+                {
+                    SqlCommandBuilder inventoryAdapterCommands = new SqlCommandBuilder(inventoryAdapter);
+                    inventoryAdapter.Update(inventoryTable);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error Saving Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                inventoryConnection.Close();
+                inventoryCommand.Dispose();
+                inventoryAdapter.Dispose();
+                inventoryTable.Dispose();
             }
-            inventoryConnection.Close();
-            inventoryCommand.Dispose();
-            inventoryAdapter.Dispose();
-            inventoryTable.Dispose();
         }
         private void ShowPhoto()
         {
@@ -328,7 +337,32 @@ namespace UsingSQLServerDatabases_Project
             y += Convert.ToInt32(myFont.GetHeight(e.Graphics));
             e.Graphics.DrawString("Store:", myFont, Brushes.Black, e.MarginBounds.X, y);
             e.Graphics.DrawString(txtStore.Text, myFont, Brushes.Black, e.MarginBounds.X + 150, y);
-            y += Convert.ToInt32(myFont)
+            y += Convert.ToInt32(myFont.GetHeight(e.Graphics));
+            e.Graphics.DrawString("Date Purchased:", myFont, Brushes.Black, e.MarginBounds.X, y);
+            e.Graphics.DrawString(dtpDatePurchased.Text, myFont, Brushes.Black, e.MarginBounds.X + 150, y);
+            y += Convert.ToInt32(myFont.GetHeight(e.Graphics));
+            e.Graphics.DrawString("Purchase Cost:", myFont, Brushes.Black, e.MarginBounds.X, y);
+            e.Graphics.DrawString("$" + String.Format("(0:f2)", txtPurchaseCost.Text), myFont, Brushes.Black, e.MarginBounds.X + 150, y);
+            y += Convert.ToInt32(myFont.GetHeight(e.Graphics));
+            e.Graphics.DrawString("Serial Number:", myFont, Brushes.Black, e.MarginBounds.X, y);
+            e.Graphics.DrawString(txtSerialNumber.Text, myFont, Brushes.Black, e.MarginBounds.X + 150, y);
+            y += 50;
+
+            int h = Convert.ToInt32(400 * picItem.Image.Height / picItem.Image.Width);
+            e.Graphics.DrawImage(picItem.Image, e.MarginBounds.X, y, 400, h);
+            pageNumber++;
+            if (pageNumber <= inventoryManager.Count)
+                e.HasMorePages = true;
+            else
+            {
+                e.HasMorePages = false;
+                pageNumber = 1;
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
